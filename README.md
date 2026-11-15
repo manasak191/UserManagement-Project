@@ -56,32 +56,38 @@ The application automatically detects the hostname and configures API endpoints:
 
 For example, if accessing the UI at `http://103.180.237.120:3000`, the API will be configured to `http://103.180.237.120:8080/api/users`.
 
-## Project Structure
+📂 Project Structure
 
-```
 UserManagementUI-Simple/
-â”œâ”€â”€ public/
-â”‚   â””â”€â”€ index.html
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ components/
-â”‚   â”‚   â”œâ”€â”€ ErrorBoundary.js
-â”‚   â”‚   â”œâ”€â”€ NetworkStatus.js
-â”‚   â”‚   â”œâ”€â”€ UserList.js
-â”‚   â”‚   â”œâ”€â”€ UserForm.js
-â”‚   â”‚   â”œâ”€â”€ UserView.js
-â”‚   â”‚   â””â”€â”€ components.css
-â”‚   â”œâ”€â”€ services/
-â”‚   â”‚   â””â”€â”€ userService.js
-â”‚   â”œâ”€â”€ utils/
-â”‚   â”‚   â”œâ”€â”€ apiConfig.js
-â”‚   â”‚   â””â”€â”€ preventRefresh.js
-â”‚   â”œâ”€â”€ App.js
-â”‚   â”œâ”€â”€ App.css
-â”‚   â”œâ”€â”€ index.js
-â”‚   â””â”€â”€ index.css
-â”œâ”€â”€ package.json
-â””â”€â”€ README.md
-```
+│
+├── public/
+│   └── index.html                 # Main HTML entry point
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── ErrorBoundary.js       # Handles React component errors
+│   │   ├── NetworkStatus.js       # Monitors online/offline status
+│   │   ├── UserList.js            # Displays the list of users
+│   │   ├── UserForm.js            # Creates and edits user details
+│   │   ├── UserView.js            # Displays individual user details
+│   │   └── components.css         # Component-specific styling
+│   │
+│   ├── services/
+│   │   └── userService.js         # Handles CRUD operations and API requests
+│   │
+│   ├── utils/
+│   │   ├── apiConfig.js           # Dynamically configures API endpoints
+│   │   └── preventRefresh.js      # Prevents unwanted page refreshes
+│   │
+│   ├── App.js                     # Main React application component
+│   ├── App.css                    # Main application styling
+│   ├── index.js                   # React application entry point
+│   └── index.css                  # Global CSS styles
+│
+├── package.json                   # Project dependencies and scripts
+│
+└── README.md                      # Project documentation
 
 ## Components
 
